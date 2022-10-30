@@ -1,0 +1,26 @@
+// grid
+@mixin desktop {
+    @media (max-width: 1280px) {
+        @content
+    }
+}
+
+@mixin pad {
+    @media (max-width: 992px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 766px) {
+        @content
+    }
+}
+
+
+//   hide-text
+@mixin hide-text {
+	text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
