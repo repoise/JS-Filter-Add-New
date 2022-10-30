@@ -1,11 +1,17 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s; }
 
-html, body {
+ol, ul {
+  list-style: none; }
+
+html,
+body {
   line-height: 1.5; }
 
 img {
@@ -40,11 +46,13 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none; } }
 
-.addTicket-img, .addTicket-form {
+.addTicket-img,
+.addTicket-form {
   width: 38%; }
 
 @media (max-width: 768px) {
-  .addTicket-img, .addTicket-form {
+  .addTicket-img,
+  .addTicket-form {
     width: 90%; } }
 
 .addTicket-img img {
@@ -102,7 +110,9 @@ body {
     -ms-flex-align: start;
     align-items: start; } }
 
-.addTicket-input input, .addTicket-input textarea, .addTicket-input select {
+.addTicket-input input,
+.addTicket-input textarea,
+.addTicket-input select {
   width: 72%;
   text-indent: 0.5rem;
   background-color: #F7F7F7;
@@ -113,7 +123,9 @@ body {
   min-height: 38px; }
 
 @media (max-width: 576px) {
-  .addTicket-input input, .addTicket-input textarea, .addTicket-input select {
+  .addTicket-input input,
+  .addTicket-input textarea,
+  .addTicket-input select {
     width: 100%; } }
 
 .addTicket-input textarea::-webkit-input-placeholder {
@@ -228,7 +240,7 @@ body {
     margin-bottom: 10px;
     width: 80%; } }
 
-.ticketCard-area {
+.ticketCardArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +287,8 @@ body {
   -ms-transform: scale(1.15);
       transform: scale(1.15); }
 
-.ticketCard-region, .ticketCard-rank {
+.ticketCard-region,
+.ticketCard-rank {
   position: absolute;
   border-radius: 0 5px 5px 0px;
   color: #FFF;
