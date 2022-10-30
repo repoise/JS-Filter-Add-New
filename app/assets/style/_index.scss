@@ -1,129 +1,140 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-transition: all .2s;
     transition: all .2s;
-  }
-  
-  html, body {
+}
+ol, ul {
+	list-style: none;
+}
+
+html,
+body {
     line-height: 1.5;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     display: block;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Microsoft JhengHei";
-  }
-  
-  .addTicket-panel {
+}
+
+.addTicket-panel {
     -webkit-box-shadow: 0px 3px 6px #00000029;
-            box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px #00000029;
     border-radius: 12px;
-  }
-  
-  .addTicket-panel {
+}
+
+.addTicket-panel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     max-width: 920px;
     margin: 120px auto 100px;
     padding: 60px 0;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .addTicket-panel {
-      margin: 0 auto;
-      padding-top: 0;
-      -webkit-box-shadow: none;
-              box-shadow: none;
+        margin: 0 auto;
+        padding-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
-  }
-  
-  .addTicket-img, .addTicket-form {
+}
+
+.addTicket-img,
+.addTicket-form {
     width: 38%;
-  }
-  
-  @media (max-width: 768px) {
-    .addTicket-img, .addTicket-form {
-      width: 90%;
+}
+
+@media (max-width: 768px) {
+
+    .addTicket-img,
+    .addTicket-form {
+        width: 90%;
     }
-  }
-  
-  .addTicket-img img {
+}
+
+.addTicket-img img {
     margin: 0 auto 21px;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .addTicket-img img:nth-child(2) {
-      display: none;
+        display: none;
     }
-  }
-  
-  .title {
+}
+
+.title {
     color: #00807E;
     border-bottom: 3px solid #00807E;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 36px;
-  }
-  
-  .title span {
+}
+
+.title span {
     margin-right: 6px;
-  }
-  
-  .addTicket-form {
+}
+
+.addTicket-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  .addTicket-form .form-group {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.addTicket-form .form-group {
     margin-bottom: 16px;
-  }
-  
-  .addTicket-form label {
+}
+
+.addTicket-form label {
     color: #00807E;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .addTicket-input {
+}
+
+.addTicket-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  @media (max-width: 576px) {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
     .addTicket-input {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
     }
-  }
-  
-  .addTicket-input input, .addTicket-input textarea, .addTicket-input select {
+}
+
+.addTicket-input input,
+.addTicket-input textarea,
+.addTicket-input select {
     width: 72%;
     text-indent: 0.5rem;
     background-color: #F7F7F7;
@@ -132,130 +143,133 @@
     border: none;
     border-bottom: 1px solid #00807E;
     min-height: 38px;
-  }
-  
-  @media (max-width: 576px) {
-    .addTicket-input input, .addTicket-input textarea, .addTicket-input select {
-      width: 100%;
+}
+
+@media (max-width: 576px) {
+
+    .addTicket-input input,
+    .addTicket-input textarea,
+    .addTicket-input select {
+        width: 100%;
     }
-  }
-  
-  .addTicket-input textarea::-webkit-input-placeholder {
+}
+
+.addTicket-input textarea::-webkit-input-placeholder {
     font-size: 1rem;
-  }
-  
-  .addTicket-input textarea:-ms-input-placeholder {
+}
+
+.addTicket-input textarea:-ms-input-placeholder {
     font-size: 1rem;
-  }
-  
-  .addTicket-input textarea::-ms-input-placeholder {
+}
+
+.addTicket-input textarea::-ms-input-placeholder {
     font-size: 1rem;
-  }
-  
-  .addTicket-input textarea::placeholder {
+}
+
+.addTicket-input textarea::placeholder {
     font-size: 1rem;
-  }
-  
-  .addTicket-input textarea {
+}
+
+.addTicket-input textarea {
     padding-top: 8px;
     min-height: 111px;
-  }
-  
-  .alert-message {
+}
+
+.alert-message {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin-top: 3px;
     color: #B21C01;
     font-size: 0.85rem;
-  }
-  
-  .alert-message p {
+}
+
+.alert-message p {
     width: 72%;
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .alert-message p {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .alert-message span {
+}
+
+.alert-message span {
     margin-left: 5px;
     font-weight: bold;
-  }
-  
-  .addTicket-btn {
+}
+
+.addTicket-btn {
     -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
     font-size: 1.25rem;
     padding: 10px 40px;
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .addTicket-btn {
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     }
-  }
-  
-  .btn {
+}
+
+.btn {
     border: none;
     background-color: #00807E;
     color: #FFF;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #64C3BF;
-  }
-  
-  .main-content {
+}
+
+.main-content {
     background-color: #F7F7F7;
     padding-bottom: 100px;
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .main-content {
-      padding-bottom: 30px;
+        padding-bottom: 30px;
     }
-  }
-  
-  .search-area {
+}
+
+.search-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     max-width: 920px;
     margin: 0 auto;
     padding: 50px 0;
-  }
-  
-  .search-area p {
+}
+
+.search-area p {
     color: #818A91;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .search-area {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
-  }
-  
-  .regionSearch {
+}
+
+.regionSearch {
     width: 27.5%;
     min-height: 38px;
     text-indent: 0.5rem;
@@ -264,96 +278,97 @@
     border: 1px solid #CED4DA;
     border-radius: 5px;
     margin-right: 2.5%;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .regionSearch {
-      margin-right: 0;
-      margin-bottom: 10px;
-      width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 80%;
     }
-  }
-  
-  .ticketCard-area {
+}
+
+.ticketCardArea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
-  }
-  
-  .ticketCard {
+}
+
+.ticketCard {
     width: 31.3333%;
     background-color: #fff;
     -webkit-box-shadow: 0px 3px 6px #00000029;
-            box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #DEE2E6;
     border-radius: 5px;
     margin-bottom: 38px;
     margin-right: 2%;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .ticketCard {
-      width: 46%;
-      margin: 0 2% 40px;
+        width: 46%;
+        margin: 0 2% 40px;
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .ticketCard {
-      width: 90%;
-      margin: 0 5% 30px;
+        width: 90%;
+        margin: 0 5% 30px;
     }
-  }
-  
-  .ticketCard-img {
+}
+
+.ticketCard-img {
     position: relative;
-  }
-  
-  .ticketCard-img a {
+}
+
+.ticketCard-img a {
     display: block;
     overflow: hidden;
-  }
-  
-  .ticketCard-img img {
+}
+
+.ticketCard-img img {
     width: 100%;
     height: 180px;
     -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .ticketCard-img img:hover {
+    object-fit: cover;
+}
+
+.ticketCard-img img:hover {
     -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-  
-  .ticketCard-region, .ticketCard-rank {
+    transform: scale(1.15);
+}
+
+.ticketCard-region,
+.ticketCard-rank {
     position: absolute;
     border-radius: 0 5px 5px 0px;
     color: #FFF;
     text-align: center;
-  }
-  
-  .ticketCard-region {
+}
+
+.ticketCard-region {
     top: -13px;
     left: 0;
     font-size: 1.25rem;
     background-color: #64C3BF;
     padding: 12px 20px;
-  }
-  
-  .ticketCard-rank {
+}
+
+.ticketCard-rank {
     bottom: -16px;
     left: 0;
     background-color: #00807E;
     padding: 5px 8px;
     min-width: 40px;
-  }
-  
-  .ticketCard-content {
+}
+
+.ticketCard-content {
     padding: 20px;
     height: calc(100% - 180px);
     display: -webkit-box;
@@ -361,14 +376,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  
-  .ticketCard-name {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ticketCard-name {
     display: block;
     text-decoration: none;
     color: #00807E;
@@ -377,67 +392,67 @@
     padding-bottom: 5px;
     border-bottom: 2px solid #00807E;
     margin-bottom: 20px;
-  }
-  
-  .ticketCard-name:hover {
+}
+
+.ticketCard-name:hover {
     color: #64C3BF;
-  }
-  
-  .ticketCard-description {
+}
+
+.ticketCard-description {
     color: #818A91;
     margin-bottom: 32px;
-  }
-  
-  .ticketCard-info {
+}
+
+.ticketCard-info {
     color: #00807E;
     font-family: 'Roboto', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  
-  .ticketCard-num {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ticketCard-num {
     font-weight: bold;
-  }
-  
-  .ticketCard-price {
+}
+
+.ticketCard-price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .ticketCard-price span {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ticketCard-price span {
     font-size: 2rem;
-  }
-  
-  .cantFind-area {
+}
+
+.cantFind-area {
     display: none;
     margin-top: 70px;
     text-align: center;
-  }
-  
-  .cantFind-area h3 {
+}
+
+.cantFind-area h3 {
     color: #00807E;
     font-size: 2rem;
     margin-bottom: 50px;
     font-weight: bold;
-  }
-  
-  .cantFind-area img {
+}
+
+.cantFind-area img {
     margin: 0 auto;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .cantFind-area {
-      margin-top: 0px;
+        margin-top: 0px;
     }
-  }
+}
