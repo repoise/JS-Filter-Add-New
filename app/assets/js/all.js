@@ -162,10 +162,10 @@ const addTicket = document.querySelector(".addTicket-btn");
 addTicket.addEventListener("click", function (e) {
   let obj = {};
   obj.id = data.length;
-  obj.name = ticketName.value;
-  obj.imgUrl = ticketImgUrl.value;
+  obj.name = ticketName.value.trim();
+  obj.imgUrl = ticketImgUrl.value.trim();
   obj.area = ticketRegion.value;
-  obj.description = ticketDescription.value;
+  obj.description = ticketDescription.value.trim();
   obj.group = ticketNum.value;
   obj.price = ticketPrice.value;
   obj.rate = ticketRate.value;
